@@ -28,12 +28,13 @@ install: install-modules install-userspace
 .PHONY: install-modules
 install-modules: build-modules
 	echo "$@"
-ifneq ($(CROSS_COMPILE),)
+	echo "$(CROSS_COMPILE)"
+ifndef CROSS_COMPILE
 	$(MAKE) --directory=$(KERNEL_OUTPUT) M=$(shell pwd) -j$(JOBS) modules_install
+	depmod
 else
 	$(MAKE) --directory=$(KERNEL_OUTPUT) M=$(shell pwd) INSTALL_MOD_PATH=$(DESTDIR) -j$(JOBS) modules_install
 endif
-	depmod
 
 .PHONY: install-userspace
 install-userspace: build-userspace

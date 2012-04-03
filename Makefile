@@ -9,7 +9,7 @@
 -include .my_build_settings
 ARCH ?= arm
 KERNEL_OUTPUT ?= /lib/modules/$(shell uname -r)/build
-DESTDIR ?= $(CURDIR)/../ste_test_install_dir
+DESTDIR ?= $(CURDIR)/build
 
 # Default config file
 LTP_CONFIG ?= defconfig

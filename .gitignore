@@ -1,0 +1,20 @@
+# Can ignore specific files
+.DS_Store
+
+# Use wildcards as well
+*~
+*.swp
+
+# ignore the build directory
+build/*
+
+#ignore files created by make
+*.o
+*.ko
+.tmp_versions
+Module.symvers
+modules.order
+*.o.cmd
+*.mod.c
+*.ko.cmd
+

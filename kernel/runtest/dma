@@ -1,0 +1,41 @@
+# DMA **************************************************************************************************
+DMA-Test22:Sendandreceive32bytebuffer dma -n 22
+DMA-Test1:Sendandreceive1bytebuffer dma -n 1
+DMA-Test2:Sendandreceive1kbuffer dma -n 2
+DMA-Test3:scatter-gatterbuffer dma -n 3
+DMA-Test4:scatter-gatterbuffer dma -n 4
+DMA-Test6:scatter-gatter buffer dma -n 6
+DMA-Test7:scatter-gatter buffer dma -n 7
+DMA-Test8:scatter-gatter buffer dma -n 8
+DMA-Test21:scatter-gatter buffer dma -n 21
+DMA-Test15:Sendandreceive1-4bytesbuffer dma -n 15
+DMA-Test16:Sendandreceive1-4bytesbuffer dma -n 16
+DMA-Test17:Sendandreceive1-4bytesbuffer dma -n 17
+DMA-Test18:Testtotransferalogicaljob<br>with>64links(Outoflclaspacethen dma -n 18
+DMA-Test19:Link2jobsinhwafterfirstjob<br>hasstarted(physical) dma -n 19
+DMA-Test20:Sendandreceive1-4bytesbuffer dma -n 20
+DMA-Test21:Link10jobsinhwafterfirstjobhas<br>started(physical),slowly dma -n 21
+DMA-Test55:Link2jobsinhwbeforestarttransfer(physical) dma -n 55
+DMA-Test56:Link2jobsinhwafterfirstjobhas<br>started(physical) dma -n 56
+DMA-Test57:Link2jobsinhwafterfirstjobhas<br>started(physical) dma -n 58
+DMA-Test58:Link10jobsinhwafterfirstjobhas<br>started(physical) dma -n 59
+DMA-Test59:Link10jobsinhwafterfirstjobhas<br>started(physical) dma -n 59
+DMA-Test60:Link10jobsinhwafterfirstjobhas<br>started(physical) dma -n 60
+DMA-Test61:Link2jobsinhwbeforestarttransfer(logical) dma -n 61
+DMA-Test62:Link2jobsinhwafterfirstjobhas<br>started(logical) dma -n 62
+DMA-Test63:Testtotransferalogicaljob<br>with>64links(Outoflclaspacethen. dma -n 63
+DMA-Test64:Testtotransferalogicaljob<br>with>124links(Outoflclaspacethen. dma -n 64
+DMA-Test65:Testallocate480llilongjobs<br>beforestarting dma -n 65
+DMA-Test66:Link10jobsinhwafterfirstjobhas<br>started(logical) dma -n 66
+DMA-Test67:Link10jobsinhwafterfirstjobhas<br>started(logical),nolinks dma -n 67
+DMA-Test68:Link10jobsinhwafterfirstjobhas<br>started(logical),slowly dma -n 68
+# long running test cases
+DMA-Test26:ToTestscatter-gatterbuffer dma -n 26
+DMA-Test7:ToTestscatter-gatterbuffer dma -n 7
+DMA-Test32:ToTestscatter-gatterbuffer dma -n 32
+DMA-Test33:ToTestscatter-gatterbuffer dma -n 33
+DMA-Test5:ToTestscatter-gatterbuffer dma -n 5
+DMA-Test34:ToTestscatter-gatterbuffer dma -n 34
+DMA-Test27:ToTestscatter-gatterbuffer dma -n 27
+DMA-Test28:ToTestscatter-gatterbuffer dma -n 28
+DMA-Test29:ToTestscatter-gatterbuffer dma -n 29

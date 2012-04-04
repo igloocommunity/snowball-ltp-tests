@@ -107,6 +107,7 @@ int main(int argc, char **argv)
 
 	int lc;			/* loop counter */
 	char *msg;		/* message returned from parse_opts */
+    int count;      /* test case loop counter */
 
 	/***************************************************************
 	 * parse standard options
@@ -130,11 +131,14 @@ int main(int argc, char **argv)
 		 ***************************************************************/
 		if (STD_FUNCTIONAL_TEST) {
 
-			for (Tst_count = 0; Tst_count < TST_TOTAL;) {
+			for (count = 0; count < TST_TOTAL; count++) {
 				int num;
 
 				num = TST_TOTAL == 1 ?
 				      testnum : test_cases[Tst_count];
+
+                # tst_xxx will use Tst_count as test nr
+                Tst_count = num -1;
 
 				TEST(dma_test(num));
 

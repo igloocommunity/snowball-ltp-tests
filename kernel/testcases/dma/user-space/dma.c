@@ -137,7 +137,7 @@ int main(int argc, char **argv)
 				num = TST_TOTAL == 1 ?
 				      testnum : test_cases[Tst_count];
 
-                # tst_xxx will use Tst_count as test nr
+                // tst_xxx will use Tst_count as test nr
                 Tst_count = num -1;
 
 				TEST(dma_test(num));

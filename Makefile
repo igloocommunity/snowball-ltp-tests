@@ -12,7 +12,7 @@ KERNEL_OUTPUT ?= /lib/modules/$(shell uname -r)/build
 DESTDIR ?= $(CURDIR)/build
 
 # Default config file
-LTP_CONFIG ?= defconfig
+LTP_CONFIG ?= snowball_defconfig
 # Number of parallell make jobs
 JOBS ?= 1
 # ------------

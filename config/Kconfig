@@ -1,0 +1,227 @@
+menuconfig LTP
+	bool "LTP framework"
+	default n
+	help
+	    Say yes, if you want to build LTP framework.
+
+menuconfig LTP_STE_TESTCASES
+	bool "ST Ericsson kernel test cases"
+	default n
+	depends on LTP
+	help
+	    Say yes, if you want to build ST Ericsson
+	    kernel test cases.
+
+if LTP_STE_TESTCASES
+
+config LTP_ALSA_I2C
+       bool "ALSA I2C"
+       default n
+       help
+           Tests for I2C via ALSA interface
+
+config LTP_SENSORS_AB8500
+       bool "LTP_SENSORS_AB8500"
+       default n
+       help
+           Tests for AB8500 thermal sensors
+
+config LTP_DMA
+       bool "LTP_DMA"
+       default n
+       help
+           LTP_DMA
+
+config LTP_METATEST
+       bool "LTP_METATEST"
+       default n
+       help
+           LTP_METATEST
+
+config LTP_EXAMPLE
+       bool "LTP_EXAMPLE"
+       default n
+       help
+           LTP_EXAMPLE
+
+config LTP_RTC
+       bool "LTP_RTC"
+       default n
+       help
+           LTP_RTC
+
+config LTP_BLUETOOTH
+       bool "LTP_BLUETOOTH"
+       default n
+       help
+           LTP_BLUETOOTH
+
+config LTP_GPIO
+       bool "LTP_GPIO"
+       default n
+       help
+           LTP_GPIO
+
+config LTP_MCDE
+       bool "LTP_MCDE"
+       default n
+       help
+           LTP_MCDE
+
+config LTP_B2R2
+       bool "LTP_B2R2"
+       default n
+       help
+           LTP_B2R2
+
+config LTP_UART
+       bool "LTP_UART"
+       default n
+       help
+           LTP_UART
+
+config LTP_SSP
+       bool "LTP_SSP"
+       default n
+       help
+           LTP_SSP
+
+config LTP_SHRM
+       bool "LTP_SHRM"
+       default n
+       help
+           LTP_SHRM
+
+config LTP_I2C
+       bool "LTP_I2C"
+       default n
+       help
+           LTP_I2C
+
+config LTP_DLP
+       bool "LTP_DLP"
+       default n
+       help
+           LTP_DLP
+
+config LTP_MMC
+       bool "LTP_MMC"
+       default n
+       help
+           LTP_MMC
+
+config LTP_EMMC_FILESYSTEM_MMC_VALIDATION_LTP
+       bool "LTP_EMMC_FILESYSTEM_MMC_VALIDATION_LTP"
+       default n
+       help
+           LTP_EMMC_FILESYSTEM_MMC_VALIDATION_LTP
+
+config LTP_MSP
+       bool "LTP_MSP"
+       default n
+       help
+           LTP_MSP
+
+config LTP_ALS
+       bool "LTP_ALS"
+       default n
+       help
+           LTP_ALS
+
+config LTP_LSM303DLH
+       bool "LTP_LSM303DLH"
+       default n
+       help
+           LTP_LSM303DLH
+
+config LTP_LPS001WP
+       bool "LTP_LPS001WP"
+       default n
+       help
+           LTP_LPS001WP
+
+config LTP_L3G4200D
+       bool "LTP_L3G4200D"
+       default n
+       help
+           LTP_L3G4200D
+
+config LTP_PROXIMITY
+       bool "LTP_PROXIMITY"
+       default n
+       help
+           LTP_PROXIMITY
+
+config LTP_POWER
+       bool "LTP_POWER"
+       default n
+       help
+           LTP_POWER
+
+config LTP_TEE
+       bool "LTP_TEE"
+       default n
+       help
+           LTP_TEE
+config LTP_TIMER
+       bool "LTP_TIMER"
+       default n
+       help
+           LTP_TIMER
+
+config LTP_HSI
+       bool "LTP_HSI"
+       default n
+       help
+           LTP_HSI
+
+config LTP_LED
+       bool "LTP_LED"
+       default n
+       help
+           LTP_LED
+
+config LTP_VIBRATOR
+       bool "LTP_VIBRATOR"
+       default n
+       help
+           LTP_VIBRATOR
+
+config LTP_L2CACHE
+       bool "LTP_L2CACHE"
+       default n
+       help
+           LTP_L2CACHE
+
+endif
+
+menuconfig LTP_STE_SYSTEMTEST_TESTCASES
+	bool "ST Ericsson System Test test cases"
+	default n
+	depends on LTP
+	help
+	    Say yes, if you want to build ST Ericsson
+	    System Test test cases.
+
+if LTP_STE_SYSTEMTEST_TESTCASES
+
+config LTP_LISTEN_TO_RADIO
+       bool "LTP_LISTEN_TO_RADIO"
+       default n
+       help
+           LTP_LISTEN_TO_RADIO
+
+config LTP_GRAPHICS_UCV
+       bool "LTP_GRAPHICS_UCV"
+       default n
+       help
+           LTP_GRAPHICS_UCV
+endif
+
+config LTP_COMMUNITY_TESTCASES
+	bool "LTP community test cases"
+	default n
+	depends on LTP
+	help
+	    Say yes, if you want to build LTP community
+	    test cases.

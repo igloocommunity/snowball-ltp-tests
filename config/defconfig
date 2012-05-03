@@ -1,0 +1,11 @@
+#
+# Automatically generated make config: don't edit
+# Fri Jul  2 14:45:17 2010
+#
+
+#
+# LTP
+#
+# CONFIG_LTP is not set
+# CONFIG_LTP_STE_TESTCASES is not set
+# CONFIG_LTP_COMMUNITY_TESTCASES is not set

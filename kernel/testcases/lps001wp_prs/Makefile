@@ -1,9 +1,11 @@
 ifeq ($(KERNELRELEASE),)
 LTP_DIR = $(abspath ../../../)
-LTP_FULL = $(LTP_DIR)/tempdir/ltp-full
+LTP_FRAMEWORK = $(LTP_DIR)/ltp_framework
 
-CFLAGS+= -I$(LTP_FULL)/include -I./include
-LOADLIBES+= -L$(LTP_FULL)/lib -lltp
+SCRIPTS=$(wildcard *.sh)
+
+CFLAGS+= -I$(LTP_FRAMEWORK)/include -I$(abspath ./include)
+LOADLIBES+= -L$(LTP_FRAMEWORK)/lib -lltp
 
 SRCS=$(wildcard *.c)
 TARGETS=$(patsubst %.c,%,$(SRCS))
